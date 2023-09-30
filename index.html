@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Best Pizza Store</title>
+  <link rel="shortcut icon" href="https://cdn1-media.rabota.ru/processor/logo/original/2021/02/24/dodopiccabrjansk-4702e87c16eb4cb532a4591e05d85b21.png" type="image/logo">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <header>
+    <h1>Order Your Pizza Now!!!</h1>
+  </header>
+
+  <main>
+
+    <form>
+
+      <fieldset class="sutomer-info">
+        <legend>Customer Information</legend>
+
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name"><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"><br>
+
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone"><br>
+
+        <label for="order-date">Date of Order:</label>
+        <input type="date" id="order-date" name="order-date"><br>
+
+        <label for="time">Till What Time You Want To Get The Order:</label>
+        <input type="time" id="time" name="time"><br>
+      </fieldset>
+
+      <fieldset class="customization">
+        <legend>Pizza Selection</legend>
+
+        <label for="quantity">Number of Pizzas:</label>
+        <input type="number" id="quantity" name="quantity" min="1"><br>
+
+        <label for="size">Size:</label>
+        <select id="size" name="size">
+          <option value="small">Small (6 slices)</option>
+          <option value="medium">Medium (8 slices)</option>
+          <option value="large">Large (10 slices)</option>
+        </select><br>
+
+        <label for="shape">Shape:</label>
+        <input type="radio" id="round" name="shape" value="round">
+        <label for="round">Round</label>
+        <input type="radio" id="square" name="shape" value="square">
+        <label for="square">Square</label><br>
+
+        <label for="toppings">Toppings:</label><br>
+        <input type="checkbox" id="pepperoni" name="toppings[]" value="pepperoni">
+        <label for="pepperoni">Pepperoni</label><br>
+        <input type="checkbox" id="mushrooms" name="toppings[]" value="mushrooms">
+        <label for="mushrooms">Mushrooms</label><br>
+        <input type="checkbox" id="onions" name="toppings[]" value="onions">
+        <label for="onions">Onions</label><br>
+        <input type="checkbox" id="sausage" name="toppings[]" value="sausage">
+        <label for="sausage">Sausage</label><br>
+        <input type="checkbox" id="peppers" name="toppings[]" value="peppers">
+        <label for="peppers">Peppers</label><br>
+
+      </fieldset>
+
+      <fieldset class="delivery">
+        <legend>Delivery Method</legend>
+
+        <input type="radio" id="pickup" name="method" value="pickup">
+        <label for="pickup">Pickup</label><br>
+
+        <input type="radio" id="delivery" name="method" value="delivery">
+        <label for="delivery">Delivery</label><br>
+
+        <input type="radio" id="dinein" name="method" value="dinein">
+        <label for="dinein">Dine In</label><br>
+
+      </fieldset>
+
+      <button type="submit" value="Submit Order">Place My Order</button>
+      <button type="reset" value="Reset Order">Reset</button>
+
+    </form>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2023 Pizza Palace</p>
+  </footer>
+
+</body>
+</html>
